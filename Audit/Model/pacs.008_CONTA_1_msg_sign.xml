@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Envelope xmlns="https://www.bcb.gov.br/pi/pacs.008/1.4">
+    <AppHdr>
+        <Fr>
+            <FIId>
+                <FinInstnId>
+                    <Othr>
+                        <Id>00038166</Id>
+                    </Othr>
+                </FinInstnId>
+            </FIId>
+        </Fr>
+        <To>
+            <FIId>
+                <FinInstnId>
+                    <Othr>
+                        <Id>99999010</Id>
+                    </Othr>
+                </FinInstnId>
+            </FIId>
+        </To>
+        <BizMsgIdr>M0003816612345678901234567890123</BizMsgIdr>
+        <MsgDefIdr>pacs.008.spi.1.4</MsgDefIdr>
+        <CreDt>2020-01-01T08:30:12.000Z</CreDt>
+        <Sgntr><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+            <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+            <ds:Reference URI="#h30F6C633351458B3DE66D7522BF852C">
+            <ds:Transforms>
+            <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+            </ds:Transforms>
+            <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+            <ds:DigestValue>E8SQ2vfk2QR96MG2hy2N5SGKhCP4yJUc+4ZKsVhzgvA=</ds:DigestValue>
+            </ds:Reference>
+            <ds:Reference URI="">
+            <ds:Transforms>
+            <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+            <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+            </ds:Transforms>
+            <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+            <ds:DigestValue>Gp1eu+XKNXY4ozxrVuvNudPSyOJkwQHm+JNdNjTfN1s=</ds:DigestValue>
+            </ds:Reference>
+            <ds:Reference>
+            <ds:Transforms>
+            <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+            </ds:Transforms>
+            <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+            <ds:DigestValue>lOPPpjmCCgVj2+Hsz0KQv3oX0ngSsiBVpfjn4rNs//c=</ds:DigestValue>
+            </ds:Reference>
+            </ds:SignedInfo>
+            <ds:SignatureValue>TfQofMeYTFo6OYcuZsbdZhbb9nRbsvOlUoM5n71wVCiDT2QlkpNJvHn2uYigtaax
+            tlbFZf6KH/IKiXAG5S6HdIxqTTLu1iD28puCNvuavyZYzfb1fGp3b1HAmkl5Z4lC
+            nGhjaW0rpiI5P/rQldxEkK7mDL2qqRRsfeNyxvB1YYFjvxa73rt8KKU5Kx7yBUmu
+            gdERBfXxEZA0P6zg0tY5GnLNIW2Ulov6R+vV4+X2Qgpf3Y/DdMWCAF9GWdgSL/By
+            yCElRHADsO3pdpRIIKA0oNroYo0yQ1CQdez+vby+Tsh37wP+bmTjHwoVfSrHXxOw
+            kOrJPiqnksThTveMQDhELA==</ds:SignatureValue>
+            <ds:KeyInfo Id="h30F6C633351458B3DE66D7522BF852C">
+            <ds:X509Data>
+            <ds:X509IssuerSerial>
+            <ds:X509IssuerName>CN=SERASA Autoridade Certificadora v5, OU=CSPB-4, O=ICP-Brasil, C=BR</ds:X509IssuerName>
+            <ds:X509SerialNumber>1991417958124156397</ds:X509SerialNumber>
+            </ds:X509IssuerSerial>
+            </ds:X509Data>
+            </ds:KeyInfo>
+            </ds:Signature></Sgntr>            
+    </AppHdr>
+    <Document>
+        <FIToFICstmrCdtTrf>
+            <GrpHdr>
+                <MsgId>M0003816612345678901234567890123</MsgId>
+                <CreDtTm>2020-01-01T08:30:12.000Z</CreDtTm>
+                <NbOfTxs>1</NbOfTxs>
+                <SttlmInf>
+                    <SttlmMtd>CLRG</SttlmMtd>
+                </SttlmInf>
+                <PmtTpInf>
+                    <InstrPrty>HIGH</InstrPrty>
+                </PmtTpInf>
+            </GrpHdr>
+            <CdtTrfTxInf>
+                <PmtId>
+                    <EndToEndId>E9999901012341234123412345678900</EndToEndId>
+                    <TxId>90000</TxId>
+                </PmtId>
+                <IntrBkSttlmAmt Ccy="BRL">1000.00</IntrBkSttlmAmt>
+                <AccptncDtTm>2020-01-01T08:30:00.000Z</AccptncDtTm>
+                <ChrgBr>SLEV</ChrgBr>
+                <Dbtr>
+                    <Nm>Fulano da Silva</Nm>
+                    <Id>
+                        <PrvtId>
+                            <Othr>
+                                <Id>70000000000</Id>
+                            </Othr>
+                        </PrvtId>
+                    </Id>
+                </Dbtr>
+                <DbtrAcct>
+                    <Id>
+                        <Othr>
+                            <Id>500000</Id>
+                            <Issr>3000</Issr>
+                        </Othr>
+                    </Id>
+                    <Tp>
+                        <Cd>CACC</Cd>
+                    </Tp>
+                </DbtrAcct>
+                <DbtrAgt>
+                    <FinInstnId>
+                        <ClrSysMmbId>
+                            <MmbId>10000000</MmbId>
+                        </ClrSysMmbId>
+                    </FinInstnId>
+                </DbtrAgt>
+                <CdtrAgt>
+                    <FinInstnId>
+                        <ClrSysMmbId>
+                            <MmbId>20000000</MmbId>
+                        </ClrSysMmbId>
+                    </FinInstnId>
+                </CdtrAgt>
+                <Cdtr>
+                    <Id>
+                        <PrvtId>
+                            <Othr>
+                                <Id>80000000000</Id>
+                            </Othr>
+                        </PrvtId>
+                    </Id>
+                </Cdtr>
+                <CdtrAcct>
+                    <Id>
+                        <Othr>
+                            <Id>600000</Id>
+                            <Issr>4000</Issr>
+                        </Othr>
+                    </Id>
+                    <Tp>
+                        <Cd>SVGS</Cd>
+                    </Tp>
+                </CdtrAcct>
+                <RmtInf>
+                    <Ustrd>Campo livre [0]</Ustrd>
+                </RmtInf>
+            </CdtTrfTxInf>
+        </FIToFICstmrCdtTrf>
+    </Document>
+</Envelope>

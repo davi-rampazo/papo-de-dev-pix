@@ -1,0 +1,114 @@
+{
+	"AppHdr": {
+		"Fr": {
+			"Item": {
+				"FinInstnId": {
+					"Othr": {
+						"Id": "00038166"
+					}
+				}
+			}
+		},
+		"To": {
+			"Item": {
+				"FinInstnId": {
+					"Othr": {
+						"Id": "99999010"
+					}
+				}
+			}
+		},
+		"BizMsgIdr": "M0003816612345678901234567890123",
+		"MsgDefIdr": "pacs.008.spi.1.4",
+		"CreDt": "2020-01-01T08:30:12Z",
+		"Sgntr": null,
+		"Validationstatus": "Pending"
+	},
+	"Document": {
+		"FIToFICstmrCdtTrf": {
+			"GrpHdr": {
+				"MsgId": "M0003816612345678901234567890123",
+				"CreDtTm": "2020-01-01T08:30:12Z",
+				"NbOfTxs": "1",
+				"SttlmInf": {
+					"SttlmMtd": 0
+				},
+				"PmtTpInf": {
+					"InstrPrty": 0
+				}
+			},
+			"CdtTrfTxInf": [
+				{
+					"PmtId": {
+						"EndToEndId": "E9999901012341234123412345678900",
+						"TxId": "90000"
+					},
+					"IntrBkSttlmAmt": {
+						"Ccy": "BRL",
+						"Value": 1000.0
+					},
+					"AccptncDtTm": "2020-01-01T08:30:00Z",
+					"ChrgBr": 0,
+					"Dbtr": {
+						"Nm": "Fulano da Silva",
+						"Id": {
+							"PrvtId": {
+								"Othr": {
+									"Id": "70000000000"
+								}
+							}
+						}
+					},
+					"DbtrAcct": {
+						"Id": {
+							"Othr": {
+								"Id": "500000",
+								"Issr": "3000"
+							}
+						},
+						"Tp": {
+							"Item": 0
+						}
+					},
+					"DbtrAgt": {
+						"FinInstnId": {
+							"ClrSysMmbId": {
+								"MmbId": "10000000"
+							}
+						}
+					},
+					"CdtrAgt": {
+						"FinInstnId": {
+							"ClrSysMmbId": {
+								"MmbId": "20000000"
+							}
+						}
+					},
+					"Cdtr": {
+						"Id": {
+							"PrvtId": {
+								"Othr": {
+									"Id": "80000000000"
+								}
+							}
+						}
+					},
+					"CdtrAcct": {
+						"Id": {
+							"Othr": {
+								"Id": "600000",
+								"Issr": "4000"
+							}
+						},
+						"Tp": {
+							"Item": 2
+						}
+					},
+					"RmtInf": {
+						"Ustrd": "Campo livre [0]"
+					}
+				}
+			]
+		}
+	}
+}
